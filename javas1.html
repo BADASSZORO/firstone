@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="javas1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javas1</title> 
+    <script src="javas1.js"></script>
+    <script src="D:\visualstudio\Webdev\Jquery\Jquery-js"></script>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+</head>
+
+<!--HTML-->
+<body>
+    <br>
+ <button onclick="fun1()"> hi click me!</button>
+ <label class="name">Username</label>
+ <input onclick="fun1()" type="button" value="click" name="username1">
+ <div class="nospace">
+ <p > hi hello hru?!</p>
+ <!--The username and password using form(onsubmit) and visiblibity style [fun4()]-->
+</div>
+ <button id="btn" onclick="fun7()">change color to normal</button>
+ <br>
+ <label>click any one of the following</label>
+ <br>
+ <label>manjusha</label>
+ <input id="any1" type="radio" value="nandhakumar" name="name">
+ <br>
+ <label>haha</label>
+ <input id="any2" type="radio" value="haha" name="name">
+ <br>
+ <label>chennai</label>
+ <input id="any3" type="radio" value="chennai" name="name">
+ <br>
+ <button onclick="fun2()">submit</button>
+ <br>
+ <div class="container">
+    <div class="content">
+ <label> There stages for a normal life</label>
+ <select  id="dropbox1">
+    <option></option>
+    <option value="self acceptance">self acceptance</option>
+    <option value="concern for others">concern for others</option>
+    <option value="community serving">community serving</option>
+ </select>
+ <br> 
+ <button onclick="fun3()">submit</button>
+</div>
+</div>
+
+<div class="position1">
+ <input id="search1"  placeholder="search" type="text">
+ <button type="submit" onclick="fun11()">SEARCH!!</button>
+</div>
+
+ <br>
+ <form onsubmit=" return fun4()" action="D:\visualstudio\Webdev\cricket\About Cricket.html">
+ <div class="container">
+ <div class="fun1">
+    <div class="sec1">
+ <label >Enter your Email</label></div>
+ <div class="sec2">
+ <input type="text" id="name" placeholder="enter your email here">
+ <label id="lab1">INVALID</label>
+</div>
+ <br>
+ <div class="sec3">
+ <label >Password</label> </div>
+<div class="sec4">
+ <input type="password" id="password" placeholder="password">
+ <label id="lab2">INVALID</label>
+ <br>
+</div>
+<div>
+ <button type="submit" >submit</button>
+
+</div>
+<div class="font">
+    <p>*Case sensitive</p>
+</div>
+</div>
+</div>
+</form>
+<br>
+<div onclick="fun8()" id="hihello" class="container1">
+  
+   <p>hi this is nandhakumar-first child</p>
+   <img  onmouseover="fun5()" onmouseout="fun6()" id="img1" src="advik1.JPG" alt="advik">
+   <p id="para1">this is sailu-second child</p>
+   <p>this is chennai-third child</p>
+</div>
+<br>
+<div id="butt1">
+   <button onmouseover="fun9()" onmouseout="fun9()" type="submit" >SUBMIT</button>
+</div>
+<div id="event1">
+   <ul>
+   <li>Website Development-javascript,wordpress</li> 
+   <li>Data Structures</li>
+   <li>English and communication skills</li>
+   <li>Cricket</li>
+   <li>Story telling</li>
+   <li>Full Stack Development</li>
+</ul>
+</div>
+
+<!-- Event Bubbling during the eventhandling-->
+<br>
+<div  class="gf"> 1
+   <div  class="fa">2
+         <div  class="son"><p>3</p>
+            <button  class="style0" type="submit">click me</button>
+         </div>
+   </div>
+</div>
+</div>
+<div class="timeout">
+   <button type="button" onclick="start()">start</button>
+   <p >hah</p>
+   <button type="button" onclick="stop()">stop</button>
+</div>
+<br>
+<div id="nono">
+   <button  onclick="window1()" > click here to create a new window </button>
+</div>
+
+
+</body>
+</html>
+
+<!--The value property sets or returns the value of the value attribute of a text field. The value property contains the default value OR the value a user types in (or a value set by a script).
+getElementbyClassName-->
+<!-- The Browser loads the HTML file from top to bottom and the interpreter does this. Since the separate CSS and JS files are linked to html file in the head section before body,these files are loaded into the webpage before the body section. This means the code without function call on the javascript file are exuceted before the body section of the html-->
+<!-- If we add the script code below the body section then it will be executed after the body as interpreter does things from top to bottom!!-->
+
+ <!--Internal javascript-->
+<script>
+   
+	
+   let suma1=document.getElementsByTagName("ul");
+suma1[0].addEventListener("click",fun10);
+let int=0;
+function fun10(){
+   if(int%2==0){
+(document.getElementsByTagName("li")[0].innerHTML="haha I am the changed one,click again to unchange");
+int++;
+}
+else{
+   document.getElementsByTagName("li")[0].innerHTML="Website Development-javascript,wordpress";
+   int++;
+}
+}
+let suma2=document.getElementsByClassName("gf")
+let suma3=document.getElementsByClassName("fa")
+let suma4=document.getElementsByClassName("son")
+suma2[0].addEventListener("click",haha1);
+suma3[0].addEventListener("click",haha2);
+suma4[0].addEventListener("click",haha3);
+</script>
